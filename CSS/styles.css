@@ -1,0 +1,134 @@
+/* Mobile first */
+body {
+    margin:0;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+}
+main {
+    min-height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 280px;
+}
+/* Structure */
+#upper {
+    min-height: 20vh;
+    width: 100%;
+}
+#logo {
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 20vh;
+    min-height: 20vh;
+}
+#content {
+    border-radius: 1.3rem 1.3rem 0 0; 
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 80vh;
+}
+#content > * {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#calculations > * {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+/* Calculations */
+label {
+    display: block;
+    font-size: 0.95rem;
+    color:hsl(184, 14%, 56%);
+}
+#tipSelection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    
+}
+/* Buttons */
+input[type=button]{
+    text-align: center;
+}
+.tipAmount {
+ 
+    width:100%;
+    border: 0;
+    padding: 2vw 4vw;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 1.1vw;
+    font-size:1.2rem;
+}
+.tip {
+    background-color:hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
+}
+.activated {
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+/* Input Area */
+.fullInput {
+    width:100%;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding:2vw 4vw;
+    border:0;
+}
+.custom::placeholder {
+    font-size: 1.5rem;
+    color:hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline:none;
+    border-radius: 1.1vw;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    color:hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+}
+#results {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 4vw;
+    padding:1.5rem;
+}
+.resultsLabel {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.resultsLabel > *{
+    display: block;
+}
+.resultsContent {
+    display: flex;
+    justify-content: space-between;
+}
+/* Results */
+.resultsHeading{
+    color:hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+.resultsSubHeading {
+    color:hsla(185, 41%, 84%, 0.6);
+    font-size: 0.8rem;
+}
+.amount {
+    color:hsl(172, 67%, 45%);
+    font-size: 1.7rem;
+}

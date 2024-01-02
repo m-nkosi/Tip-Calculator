@@ -7,38 +7,94 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
+  <link rel="stylesheet" href="./CSS/styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <main>
+    <div id="upper">
+      <div id="logo">
 
-  Bill
+      </div>
+    </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <div id="content">
+      <div id="calculations">
+        
+        <div id="topCalculations">
+          <label for="bill">
+            Bill
+          </label>
+          <input id="bill" class="fullInput" type="number">
+        </div>
+        <div class="middleCalculations">
+          <label for="tipSelection">Select Tip %</label>
+          <div id="tipSelection">
+            <input class="tipAmount tip" type="button" value="5%">
+            <input class="tipAmount tip" type="button" value="10%">
+            <input class="tipAmount activated" type="button" value="15%">
+            <input class="tipAmount tip" type="button" value="25%">
+            <input class="tipAmount tip" type="button" value="50%">
+            <input class="tipAmount custom" type="number" placeholder="Custom">
+          
+          </div>
+        </div>
 
-  Number of People
+        <div>
+          <label id="NumberOfPeople">Number of People</label>
+          <input type="number" class="fullInput" id="NumberOfPeople">
+        </div>
 
-  Tip Amount
-  / person
+      </div>
+      <div id="results">
+          <div class="resultsContent">
+            <div class="resultsLabel">
+              <span class="resultsHeading">
+                Tip Amount
+              </span>
+              <span class="resultsSubHeading">
+                / person
+              </span>
+            </div>
+            <div>
+              <span class="amount">$4.27</span>
+            </div>
+          </div>
+          <div class="resultsContent">
+            <div class="resultsLabel">
+              <span class="resultsHeading">
+                Total
+              </span>
+              <span class="resultsSubHeading">
+                / person
+              </span>
+            </div>
+            <div>
+              <span class="amount">$32.79</span>
+            </div>
+          </div>
+          <div>
+            <button class="tipAmount activated" id="resetButton">RESET</button>
+          </div>
 
-  Total
-  / person
+          
 
-  Reset
+      </div>
+
+    </div>
+
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/m-nkosi">Mxolisi Nkosi</a>.
   </div>
 </body>
 </html>
