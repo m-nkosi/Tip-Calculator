@@ -132,3 +132,81 @@ input {
     color:hsl(172, 67%, 45%);
     font-size: 1.7rem;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media (min-width:600px){
+    /* Structure */
+    main {
+        justify-content: center;
+    }
+    #content {
+        border-radius: 1.5rem;
+        flex-direction: row;
+        padding:3rem;
+        min-height: 40vh;
+        /* max-height: 60vh; */
+        width:50%;
+        align-self: center;
+    }
+    /* Input */
+    .fullInput {
+        padding:clamp(0.5rem, 1vw,1.5rem);
+    }
+    /* Sections */
+    #results{
+        width: 40%;
+        justify-content: space-between;
+        border-radius: 1.5rem;
+        padding:clamp(2rem, 2vw, 4rem   );
+    }
+    #resultsTop {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #tipSelection {
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+    }
+    #calculations {
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    /* Buttons */
+    .tipAmount {
+        padding:clamp(0.5rem, 1vw, 1rem);
+        border-radius: 0.7rem;
+        font-size: clamp(1rem, 1vw, 2rem);
+    }
+    /* Input */
+    .custom::placeholder {
+        font-size: clamp(0.8rem, 1vw, 3rem);
+        text-align: center;
+    }
+    input {
+        border-radius: 0.7rem;
+    }
+    /* Text */
+    label {
+        font-size: clamp(1rem, 1vw, 2rem);
+    }
+    .amount {
+        font-size: clamp(1.5rem, 3vw,4rem);
+    }
+    .resultsHeading {
+        font-size: clamp(0.8rem, 1vw, 1.9rem);
+    }
+    .resultsSubHeading {
+        font-size: clamp(0.7rem, 0.9vw, 1.6rem);
+    }
+}
