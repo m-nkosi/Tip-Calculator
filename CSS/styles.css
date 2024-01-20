@@ -172,12 +172,13 @@ input::placeholder {
     #content {
         border-radius: 1.5rem;
         flex-direction: row;
-        padding: 3rem;
+        padding: clamp(2rem, 2vw,3rem);
         min-height: 45vh;
-        /* max-height: 60vh; */
+        max-height: 500px;
         width:55%;
         align-self: center;
         justify-content: space-between;
+        min-width: 580px;
     }
     #content > div {
         width:44%;
@@ -220,6 +221,9 @@ input::placeholder {
     input {
         border-radius: 0.7rem;
     }
+    input::placeholder {
+        font-size: 2vw;
+    }
     /* Text */
     label {
         font-size: clamp(1rem, 1vw, 2rem);
@@ -235,6 +239,6 @@ input::placeholder {
     }
     /*  Logo  */
     img {
-        height: 5vh;
+        height: 50%;
     }
 }
