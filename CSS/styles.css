@@ -21,7 +21,9 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-
+#resetButton {
+    color:hsl(183, 100%, 15%);
+}
 #logo {
 
     display: flex;

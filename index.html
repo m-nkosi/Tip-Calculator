@@ -40,11 +40,11 @@
         <div class="middleCalculations">
           <label for="tipSelection">Select Tip %</label>
           <div id="tipSelection">
-            <input class="tipAmount tip" type="button" value="5%">
-            <input class="tipAmount tip" type="button" value="10%">
-            <input class="tipAmount tip" type="button" value="15%">
-            <input class="tipAmount tip" type="button" value="25%">
-            <input class="tipAmount tip" type="button" value="50%">
+            <input class="tipAmount tipButton tip" type="button" value="5%">
+            <input class="tipAmount tipButton tip" type="button" value="10%">
+            <input class="tipAmount tipButton tip" type="button" value="15%">
+            <input class="tipAmount tipButton tip" type="button" value="25%">
+            <input class="tipAmount tipButton tip" type="button" value="50%">
             <label>
               <input class="tipAmount custom" type="number" placeholder="Custom">
             </label>
@@ -74,7 +74,7 @@
               </span>
             </div>
             <div>
-              <span class="amount">$0.00</span>
+              <span id="amount" class="amount">$0.00</span>
             </div>
           </div>
           <div class="resultsContent">
@@ -87,7 +87,7 @@
               </span>
             </div>
             <div>
-              <span class="amount">$0.00</span>
+              <span id="total" class="amount">$0.00</span>
             </div>
           </div>
           </div>
@@ -107,5 +107,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/m-nkosi">Mxolisi Nkosi</a>.
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./javaScript/index.js"></script>
 </body>
 </html>
