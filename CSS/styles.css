@@ -17,13 +17,19 @@ main {
 #upper {
     min-height: 20vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 #logo {
-    background-image: url('../images/logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 20vh;
-    min-height: 20vh;
+
+    display: flex;
+    justify-content: center;
+}
+img {
+    align-self: center;
+    left:5%;
 }
 #content {
     border-radius: 1.3rem 1.3rem 0 0; 
@@ -88,13 +94,11 @@ input[type=button]{
 }
 .custom::placeholder {
     font-size: 1.5rem;
-    color:hsl(183, 100%, 15%);
+    color:hsl(186, 14%, 43%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
 }
 input {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline:none;
     border-radius: 1.1vw;
@@ -102,6 +106,14 @@ input {
     font-family: 'Space Mono', monospace;
     color:hsl(183, 100%, 15%);
     background-color: hsl(189, 41%, 97%);
+}
+.inputWithIconDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iconForInput {
+    position: absolute;
 }
 #results {
     background-color: hsl(183, 100%, 15%);
@@ -143,6 +155,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.blockDiv {
+    position: relative;
+}
+input::placeholder {
+    color:hsl(186, 14%, 43%);
+}
+.deactivated {
+    background-color:hsl(183, 100%, 25%) ;
+}
 @media (min-width:600px){
     /* Structure */
     main {
@@ -151,11 +172,16 @@ input[type=number] {
     #content {
         border-radius: 1.5rem;
         flex-direction: row;
-        padding:3rem;
-        min-height: 40vh;
-        /* max-height: 60vh; */
-        width:50%;
+        padding: clamp(2rem, 2vw,3rem);
+        min-height: 45vh;
+        max-height: 500px;
+        width:55%;
         align-self: center;
+        justify-content: space-between;
+        min-width: 580px;
+    }
+    #content > div {
+        width:44%;
     }
     /* Input */
     .fullInput {
@@ -163,7 +189,7 @@ input[type=number] {
     }
     /* Sections */
     #results{
-        width: 40%;
+
         justify-content: space-between;
         border-radius: 1.5rem;
         padding:clamp(2rem, 2vw, 4rem   );
@@ -179,22 +205,24 @@ input[type=number] {
         gap:20px;
     }
     #calculations {
-        width: 50%;
         justify-content: space-evenly;
     }
     /* Buttons */
     .tipAmount {
         padding:clamp(0.5rem, 1vw, 1rem);
-        border-radius: 0.7rem;
+        border-radius: 0.5rem;
         font-size: clamp(1rem, 1vw, 2rem);
     }
     /* Input */
     .custom::placeholder {
-        font-size: clamp(0.8rem, 1vw, 3rem);
+        font-size: clamp(0.8rem, 1.45vw, 3rem);
         text-align: center;
     }
     input {
         border-radius: 0.7rem;
+    }
+    input::placeholder {
+        font-size: 2vw;
     }
     /* Text */
     label {
@@ -208,5 +236,9 @@ input[type=number] {
     }
     .resultsSubHeading {
         font-size: clamp(0.7rem, 0.9vw, 1.6rem);
+    }
+    /*  Logo  */
+    img {
+        height: 50%;
     }
 }
