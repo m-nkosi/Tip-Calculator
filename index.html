@@ -21,35 +21,42 @@
   <main>
     <div id="upper">
       <div id="logo">
-
+        <img alt="logo icon" src="./images/logo.svg">
       </div>
     </div>
 
     <div id="content">
       <div id="calculations">
-        
-        <div id="topCalculations">
-          <label for="bill">
-            Bill
-          </label>
-          <input id="bill" class="fullInput" type="number">
+        <label for="bill">
+          Bill
+        </label>
+        <div class="blockDiv">
+          <div id="topCalculations" class="inputWithIconDiv">
+            <img class="iconForInput" alt="dollar icon" src="./images/icon-dollar.svg">
+            <input id="bill" placeholder="0" max="9999" class="fullInput inputWithIcon" type="number">
+          </div>
         </div>
+
         <div class="middleCalculations">
           <label for="tipSelection">Select Tip %</label>
           <div id="tipSelection">
             <input class="tipAmount tip" type="button" value="5%">
             <input class="tipAmount tip" type="button" value="10%">
-            <input class="tipAmount activated" type="button" value="15%">
+            <input class="tipAmount tip" type="button" value="15%">
             <input class="tipAmount tip" type="button" value="25%">
             <input class="tipAmount tip" type="button" value="50%">
             <input class="tipAmount custom" type="number" placeholder="Custom">
           
           </div>
         </div>
+        <label for="numberOfPeople">Number of People</label>
+        <div class="blockDiv">
+          <div class="inputWithIconDiv">
+            <img class="iconForInput" src="./images/icon-person.svg" alt="person icon">
+            <input type="number" placeholder="0" class="fullInput inputWithIcon" id="numberOfPeople">
+          </div>
 
-        <div>
-          <label for="numberOfPeople">Number of People</label>
-          <input type="number" class="fullInput" id="numberOfPeople">
+
         </div>
 
       </div>
@@ -65,7 +72,7 @@
               </span>
             </div>
             <div>
-              <span class="amount">$4.27</span>
+              <span class="amount">$0.00</span>
             </div>
           </div>
           <div class="resultsContent">
@@ -78,12 +85,12 @@
               </span>
             </div>
             <div>
-              <span class="amount">$32.79</span>
+              <span class="amount">$0.00</span>
             </div>
           </div>
           </div>
           <div>
-            <button class="tipAmount activated" id="resetButton">RESET</button>
+            <button  disabled class="tipAmount deactivated" id="resetButton">RESET</button>
           </div>
 
           
