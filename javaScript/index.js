@@ -105,7 +105,7 @@ $(document).ready(() => {
     // updating the percentage with custom values
     $("#custom").on("keyup", () => {
         // if it is not empty, remove the active button
-        if ($("#custom").val() != "")
+        if ($("#custom").val() != "" && $("#bill").val() != "" && $("#numberOfPeople").val() != "")
         {
             $(".activated").removeClass("activated");
             $("#resetButton").addClass("activated");

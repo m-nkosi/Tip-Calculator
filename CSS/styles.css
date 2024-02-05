@@ -109,6 +109,10 @@ input {
     color:hsl(183, 100%, 15%);
     background-color: hsl(189, 41%, 97%);
 }
+.tipButton:hover {
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
 .inputWithIconDiv {
     display: flex;
     flex-direction: column;
