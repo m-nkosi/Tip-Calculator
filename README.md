@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 #### mobile version
-![mobile version](./images/mobile%20version.png)
+![mobile version](./images/Mobile.png)
 #### mobile version activated version
-![mobile version activated](./images/mobile%20active%20mode.png)
+![mobile version activated](./images/mobile%20active.png)
 #### desktop version
-![desktop version](./images/desktop%20version.png)
+![desktop version](./images/Desktop.png)
 #### desktop version
-![desktop version activated](./images/desktop%20active%20mode.png)
+![desktop version activated](./images/Desktop%20active.png)
 
 ### Links
 
